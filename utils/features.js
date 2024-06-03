@@ -8,7 +8,7 @@ export const sendCookie = (user,res,statusCode,message)=>{
     res.cookie("token",token,{
         httpOnly:true,
         maxAge: 15 * 60 *1000,
-        sameSite:process.env.NODE_ENV === "Development"? "lax":"none",
+        sameSite:process.env.NODE_ENV === "Development"? "lax":"lax",
         secure:process.env.NODE_ENV === "Development"? false:true,
     })
 
