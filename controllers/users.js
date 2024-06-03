@@ -62,7 +62,7 @@ export const login = async(req,res,next)=>{
     
         if(isMatched){
     
-            sendCookie(user,res,200,`Welcom Back ${user[0].name}`)
+            sendCookie(user,res,200,`Welcome Back ${user[0].name}`)
             
         }else{
             return next(new ErrorHandler("Invalid Email And Password",400))
