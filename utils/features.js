@@ -9,7 +9,7 @@ export const sendCookie = (user,res,statusCode,message)=>{
         httpOnly:true,
         maxAge: 15 * 60 *1000,
         SameSite:process.env.NODE_SITE,
-        secure:process.env.NODE_ENV === "Development"? false:true,
+        Secure:process.env.NODE_ENV === "Development"? false:true,
     })
 
 
