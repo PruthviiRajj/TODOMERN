@@ -12,7 +12,7 @@ router.post("/new",newUser)
 
 router.post("/login",login)
 
-router.post("/logout",logout)
+router.get("/logout",logout)
 
 router.get("/myprofile", isAuthenticated,getMyProfile)
 
